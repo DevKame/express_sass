@@ -21,6 +21,7 @@ server.use('/products', Productrouter);
 server.use('/', Indexrouter);
 
 server.use(helmet());
+server.use(express.static('public'));
 server.set('view engine', 'hbs');
 server.set('views', path.join(__dirname, 'views'));
 

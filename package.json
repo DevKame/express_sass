@@ -5,6 +5,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
+    "dev": "npm run scss & nodemon .",
+    "scss": "sass --watch scss/main.scss public/styles/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +17,7 @@
   "dependencies": {
     "express": "^5.1.0",
     "hbs": "^4.2.0",
-    "helmet": "^8.1.0"
+    "helmet": "^8.1.0",
+    "sass": "^1.87.0"
   }
 }
