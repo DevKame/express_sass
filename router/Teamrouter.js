@@ -4,7 +4,7 @@ import express from 'express';
 
 const Teamrouter = express.Router();
 
-Teamrouter.use('/', (req, res, next) => {
+Teamrouter.get('/', (req, res, next) => {
     res.render('team');
 });
 

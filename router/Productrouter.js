@@ -4,7 +4,7 @@ import express from 'express';
 
 const Productrouter = express.Router();
 
-Productrouter.use('/', (req, res, next) => {
+Productrouter.get('/', (req, res, next) => {
     res.render('products');
 });
 
